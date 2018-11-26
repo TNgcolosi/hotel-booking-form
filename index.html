@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Holiday Form</title>
+</head>
+<body>
+
+    <!-- a variable is a named memory location - computers are governed by memory, the program needs to know how much space it needs to run
+    we declare variables to store data. 
+
+    JS has many types of variables. Variable declaration - var nameofvariable;
+
+    3 data types - number, string, boolean.
+
+    to write to a webpage - console.write(sum); will return the value, document.write(); will display the value.
+
+     -->
+
+     <div class="container">
+         <div class="row">
+             <div class="col">
+                 <div class="special-card card">
+                     <h1>Hotel Reservations</h1>
+                        <form method="POST" action="">
+                            <label for="name">Name</label><br>
+                            <input class="form-control form-control-sm" type="text" placeholder="Your name here...">
+                            <label for="surname"> Surname</label><br>
+                            <input class="form-control form-control-sm" type="text" placeholder="Your surname here...">
+                            <p>Select your Hotel by clicking the dropdown menu below.</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Select Hotel
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Maldives</a>
+                                  <a class="dropdown-item" href="#">Bali</a>
+                                  <a class="dropdown-item" href="#">Thailand</a>
+                                </div>
+                            </div>
+                            <label for="days"> Duration of stay </label>
+                            <input class="form-control form-control-sm" type="number">
+                            <button type="button" class="btn btn-secondary">Submit</button>
+                        </form>
+                 </div>
+             </div>
+             <div class="col">
+                 <div class="special-card card">
+                     <h1>All output goes here</h1>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+     
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+</body>
+</html>
