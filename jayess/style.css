@@ -12,7 +12,28 @@ body {
     
       background-color: rgba(245, 245, 245, 1);
       opacity: .6;
+      box-shadow: 0 0 20px #ccc;
     }
+
+.card h1{
+    text-shadow: 4px 4px 4px #aaa;
+    font-family: 'Libre Baskerville', serif;
+    color: #3a2f36;
+    text-align: center
+}    
+
+.card h3{
+    text-shadow: 4px 4px 4px #aaa;
+    font-family: 'Libre Baskerville', serif;
+    color: #3a2f36;
+    text-align: center
+}
+
+.card p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-weight: bolder;
+}
 
 .container {
     margin-top: 8%;
@@ -24,6 +45,6 @@ body {
 }
 
 .bottom-card {
-    margin-top: 56%;
+    margin-top: 44%;
 }
 

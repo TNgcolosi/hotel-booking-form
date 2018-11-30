@@ -1,7 +1,8 @@
 var hotels = ["Maldives", "Bali", "Thailand"];
 var dayRates = [1000, 900, 800];
-//declaring the object that will display on the right
+var i = 0;
 
+//function to validate form inputs
 function validateForm() {
     var firstname = document.forms["hotelForm"]["firstname"].value;
     var lastname = document.forms["hotelForm"]["lastname"].value;
@@ -19,29 +20,26 @@ function validateForm() {
     }
 }
 
-
-
-function displayHotelAndDayRate() {
-    var i;
-    for (i = 0; i < hotels.length; i++) {
-        document.getElementById('hotels').innerHTML = hotels[i] + ' Hotel ' + dayRates[i] + ' per night, pps';
-    }
-    
+//function to display the hotel choice selected and the daily rate of that hotel
+function displayHotelAndDayRate(x) {
+        document.getElementById('hotels').innerHTML = hotels[x] + ' Hotel ' + dayRates[x] + ' per night, pps';
+        
+    i = x;
 }
 
+//function that displays a breakdown of hotel, daily rate, days and total price
 function displaySelectionAndPrice() {
 
     var person = {
         firstName: document.forms["hotelForm"]["firstname"].value,
         lastName: document.forms["hotelForm"]["lastname"].value,   
     }
-    var i;
-    for (i=0; i < hotels.length; i++) {
+
     var days = document.forms["hotelForm"]["days"].value;
     var total = dayRates[i] * days;
 
     document.getElementById('test').innerHTML =
-    person['firstName'] + " " + person['lastName'] + " You are booking " + hotels[i] + 
-    ". <br> Number of days: " + days + " <br>Daily Rate: R" + dayRates[i] + "pps <br>Total: " + total;
+    "Congratulations " + person['firstName'] + " " + person['lastName'] + " !! <br> You are booking " + hotels[i] + 
+    " Hotel. <br> Number of days: " + days + " <br>Daily Rate: R" + dayRates[i] + "pps <br>Total: " + total +
+    '   <button type="button" class="btn-outline-secondary float-right"> Go to Checkout </button>';
     }
-}
